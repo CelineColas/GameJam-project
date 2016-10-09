@@ -52,7 +52,7 @@ svg {
 
 .slider-control.left {
   left: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.18) 0%, transparent 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
 }
 
 .slider-control.right {
@@ -145,11 +145,14 @@ svg {
 
 .slide:nth-child(1) .slide__bg {
   left: 0;
-  background-image: url("https://unsplash.it/850/650/?random");
+  background-image: url("img/First-background1.png");
+  background-position: center center;
+  background-size: cover;
 }
 
 .slide:nth-child(1) .slide__overlay-path {
-  fill: #e99c7e;
+  /*fill: #e99c7e;*/
+  fill: #d0cece;
 }
 
 .slide:nth-child(1) mediaMaxWidth(991px) .slide__text {
@@ -162,15 +165,16 @@ svg {
 
 .slide:nth-child(2) .slide__bg {
   left: -50%;
-  background-image: url("https://unsplash.it/850/650/?random");
+  background-image: url("img/Tableau1.png");
 }
 
 .slide:nth-child(2) .slide__overlay-path {
-  fill: #e1ccae;
+  fill: #d0cece;
 }
 
 .slide:nth-child(2) mediaMaxWidth(991px) .slide__text {
-  background-color: rgba(225, 204, 174, 0.8);
+/*  background-color: rgba(225, 204, 174, 0.8);*/
+  background-color: rgba(208, 206, 206, 0.2);
 }
 
 .slide:nth-child(3) {
@@ -179,11 +183,12 @@ svg {
 
 .slide:nth-child(3) .slide__bg {
   left: -100%;
-  background-image: url("https://unsplash.it/850/650/?random");
+  background-image: url("img/Menu.png");
 }
 
 .slide:nth-child(3) .slide__overlay-path {
-  fill: #adc5cd;
+  /*fill: #adc5cd;*/
+  fill: #d0cece;
 }
 
 .slide:nth-child(3) mediaMaxWidth(991px) .slide__text {
@@ -232,7 +237,7 @@ svg {
 }
 
 .slide__overlay path {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .slide__text {
@@ -240,7 +245,9 @@ svg {
   width: 25%;
   bottom: 15%;
   left: 12%;
-  color: #fff;
+/*  color: #dbd9d9;
+  color:#4A9AC8;*/
+  color:#60492E;
   transition: transform 0.5s 0.8s, opacity 0.5s 0.8s;
   will-change: transform, opacity;
   transform: translateY(-50%);
@@ -259,7 +266,7 @@ svg {
 }
 
 .slide__text-heading {
-  font-size: 4rem;
+  font-size: 5rem;
   margin-bottom: 2rem;
   font-family: 'Baloo Tamma', cursive;
 }
@@ -271,8 +278,12 @@ svg {
 
 .slide__text-desc {
   font-size: 1.8rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   font-family: 'Roboto', sans-serif;
+}
+
+.intro{
+  margin-bottom: 10rem;
 }
 
 .slide__text-desc mediaMaxWidth(991px) {

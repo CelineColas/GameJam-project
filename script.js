@@ -6,9 +6,9 @@ $(document).ready(function() {
       curSlide = 0,
       numOfSlides = $(".slide").length-1,
       animating = false,
-      animTime = 900,
+      animTime = 1200,
       autoSlideTimeout,
-      autoSlideDelay = 15000,
+      autoSlideDelay = 150000,
       $pagination = $(".slider-pagi");
 
   function createBullets() {
@@ -97,6 +97,7 @@ $(document).ready(function() {
     }
     if (diff > -8 && diff < 8) {
       changeSlides();
+
       return;
     }
     if (diff <= -8) {
